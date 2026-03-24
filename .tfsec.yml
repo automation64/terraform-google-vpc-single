@@ -1,0 +1,14 @@
+---
+#
+# TFSec / Configuration
+#
+# * Version: 1.0.0
+# * Template: 1.0.0
+#
+
+#
+# Project settings
+#
+
+exclude:
+  - google-compute-enable-vpc-flow-logs
