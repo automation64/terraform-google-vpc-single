@@ -1,9 +1,7 @@
-shared__name     = "test"
-shared__location = "us-central1"
+#
+# Static values
+#
 
-# Use TF_VAR to set test time values
-# google_project = {
-#   deletion_policy = "DELETE"
-#   billing_account = "TBD"
-#   org_id          = "TBD"
-# }
+shared__name         = "test"
+shared__location     = "us-central1"
+shared__allow_delete = true

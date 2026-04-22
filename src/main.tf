@@ -1,4 +1,4 @@
 module "lib_catalog" {
-  source  = "automation64/catalog/lib"
-  version = "v1.1.0"
+  source  = "registry.terraform.io/automation64/catalog/lib"
+  version = "v1.3.0"
 }
