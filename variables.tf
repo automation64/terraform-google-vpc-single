@@ -21,10 +21,11 @@ variable "shared__prefix" {
   sensitive   = false
   nullable    = true
   type = object({
-    google_compute_network    = optional(string)
-    google_compute_subnetwork = optional(string)
-    google_compute_router     = optional(string)
-    google_compute_firewall   = optional(string)
+    google_compute_firewall       = optional(string)
+    google_compute_global_address = optional(string)
+    google_compute_network        = optional(string)
+    google_compute_router         = optional(string)
+    google_compute_subnetwork     = optional(string)
   })
   default = {}
 }
@@ -42,6 +43,14 @@ variable "shared__project_id" {
   sensitive   = false
   nullable    = false
   type        = string
+}
+
+variable "shared__allow_delete" {
+  description = "Allow terraform to delete provisioned resources"
+  sensitive   = false
+  nullable    = false
+  type        = bool
+  default     = false
 }
 
 #

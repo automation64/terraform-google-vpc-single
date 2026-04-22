@@ -23,6 +23,9 @@ Terraform module for Google VPC:
 - Features:
   - Private and DMZ subnetworks
   - Optional logging
+  - Google Identity-Aware Proxy (IAP) for SSH access
+  - Private Google Access for private services
+  - Default routes for private and DMZ subnetworks
 
 ---
 
